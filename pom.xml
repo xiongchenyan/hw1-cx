@@ -96,7 +96,7 @@
     </dependency>
   </dependencies>
   <scm>
-  	<url>git:git@github.com:xiongchenyan/hw1-cx.git</url>
-  	<connection>git:git@github.com:xiongchenyan/hw1-cx.git</connection>
+  	<connection>scm:git:git@github.com:xiongchenyan/hw1-cx.git</connection>
+  	<developerConnection>scm:git:git@github.com:xiongchenyan/hw1-cx.git</developerConnection>
   </scm>
 </project>
