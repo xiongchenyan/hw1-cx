@@ -10,8 +10,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** 
- * Updated by JCasGen Mon Sep 09 17:00:33 EDT 2013
+/** type system for Token. inherited from annotation class. each token correspondes to a token in a sentence.
+ * Updated by JCasGen Mon Sep 09 23:14:55 EDT 2013
  * XML source: /home/cx/workspace/11791/hw1-cx/desc/hw1-typesystem.xml
  * @generated */
 public class Token extends Annotation {
@@ -65,14 +65,14 @@ public class Token extends Annotation {
   //*--------------*
   //* Feature: postag
 
-  /** getter for postag - gets 
+  /** getter for postag - gets the postag of this token
    * @generated */
   public String getPostag() {
     if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_postag == null)
       jcasType.jcas.throwFeatMissing("postag", "edu.cmu.cs.lti.cx.Token");
     return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_postag);}
     
-  /** setter for postag - sets  
+  /** setter for postag - sets the postag of this token 
    * @generated */
   public void setPostag(String v) {
     if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_postag == null)
@@ -83,14 +83,14 @@ public class Token extends Annotation {
   //*--------------*
   //* Feature: StemRes
 
-  /** getter for StemRes - gets the stemming term of this token
+  /** getter for StemRes - gets the stemming result of this token
    * @generated */
   public String getStemRes() {
     if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_StemRes == null)
       jcasType.jcas.throwFeatMissing("StemRes", "edu.cmu.cs.lti.cx.Token");
     return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_StemRes);}
     
-  /** setter for StemRes - sets the stemming term of this token 
+  /** setter for StemRes - sets the stemming result of this token 
    * @generated */
   public void setStemRes(String v) {
     if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_StemRes == null)
@@ -101,19 +101,55 @@ public class Token extends Annotation {
   //*--------------*
   //* Feature: TermNum
 
-  /** getter for TermNum - gets number of terms in this token.
+  /** getter for TermNum - gets number of terms in this token. most time 1, based on different tokenizer, could be more than 1.
    * @generated */
   public int getTermNum() {
     if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_TermNum == null)
       jcasType.jcas.throwFeatMissing("TermNum", "edu.cmu.cs.lti.cx.Token");
     return jcasType.ll_cas.ll_getIntValue(addr, ((Token_Type)jcasType).casFeatCode_TermNum);}
     
-  /** setter for TermNum - sets number of terms in this token. 
+  /** setter for TermNum - sets number of terms in this token. most time 1, based on different tokenizer, could be more than 1. 
    * @generated */
   public void setTermNum(int v) {
     if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_TermNum == null)
       jcasType.jcas.throwFeatMissing("TermNum", "edu.cmu.cs.lti.cx.Token");
     jcasType.ll_cas.ll_setIntValue(addr, ((Token_Type)jcasType).casFeatCode_TermNum, v);}    
+   
+    
+  //*--------------*
+  //* Feature: TF
+
+  /** getter for TF - gets term frequency of this term in document/sentence
+   * @generated */
+  public double getTF() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_TF == null)
+      jcasType.jcas.throwFeatMissing("TF", "edu.cmu.cs.lti.cx.Token");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Token_Type)jcasType).casFeatCode_TF);}
+    
+  /** setter for TF - sets term frequency of this term in document/sentence 
+   * @generated */
+  public void setTF(double v) {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_TF == null)
+      jcasType.jcas.throwFeatMissing("TF", "edu.cmu.cs.lti.cx.Token");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Token_Type)jcasType).casFeatCode_TF, v);}    
+   
+    
+  //*--------------*
+  //* Feature: IDF
+
+  /** getter for IDF - gets invert document frequency of this term in copus.
+   * @generated */
+  public double getIDF() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_IDF == null)
+      jcasType.jcas.throwFeatMissing("IDF", "edu.cmu.cs.lti.cx.Token");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Token_Type)jcasType).casFeatCode_IDF);}
+    
+  /** setter for IDF - sets invert document frequency of this term in copus. 
+   * @generated */
+  public void setIDF(double v) {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_IDF == null)
+      jcasType.jcas.throwFeatMissing("IDF", "edu.cmu.cs.lti.cx.Token");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Token_Type)jcasType).casFeatCode_IDF, v);}    
   }
 
     

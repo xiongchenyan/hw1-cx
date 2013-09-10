@@ -9,8 +9,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** 
- * Updated by JCasGen Mon Sep 09 17:00:33 EDT 2013
+/** type system for question. inherited from sentence.
+ * Updated by JCasGen Mon Sep 09 23:14:55 EDT 2013
  * XML source: /home/cx/workspace/11791/hw1-cx/desc/hw1-typesystem.xml
  * @generated */
 public class Question extends Sentence {
@@ -77,6 +77,24 @@ public class Question extends Sentence {
     if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_QuestionType == null)
       jcasType.jcas.throwFeatMissing("QuestionType", "edu.cmu.cs.lti.cx.Question");
     jcasType.ll_cas.ll_setStringValue(addr, ((Question_Type)jcasType).casFeatCode_QuestionType, v);}    
+   
+    
+  //*--------------*
+  //* Feature: ConfidentScore
+
+  /** getter for ConfidentScore - gets The confident score of system in answering this sentence.
+   * @generated */
+  public double getConfidentScore() {
+    if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_ConfidentScore == null)
+      jcasType.jcas.throwFeatMissing("ConfidentScore", "edu.cmu.cs.lti.cx.Question");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Question_Type)jcasType).casFeatCode_ConfidentScore);}
+    
+  /** setter for ConfidentScore - sets The confident score of system in answering this sentence. 
+   * @generated */
+  public void setConfidentScore(double v) {
+    if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_ConfidentScore == null)
+      jcasType.jcas.throwFeatMissing("ConfidentScore", "edu.cmu.cs.lti.cx.Question");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Question_Type)jcasType).casFeatCode_ConfidentScore, v);}    
   }
 
     

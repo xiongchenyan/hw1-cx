@@ -13,8 +13,8 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/** 
- * Updated by JCasGen Mon Sep 09 17:00:33 EDT 2013
+/** type system for ngram. inherited from annotation class. each token correspondes to a ngram in a sentence. the n is stored in feature NgramLen
+ * Updated by JCasGen Mon Sep 09 23:14:55 EDT 2013
  * @generated */
 public class Ngram_Type extends Annotation_Type {
   /** @generated */
@@ -45,41 +45,58 @@ public class Ngram_Type extends Annotation_Type {
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.cs.lti.cx.Ngram");
  
   /** @generated */
-  final Feature casFeat_TokenList;
+  final Feature casFeat_NgramLen;
   /** @generated */
-  final int     casFeatCode_TokenList;
+  final int     casFeatCode_NgramLen;
   /** @generated */ 
-  public int getTokenList(int addr) {
-        if (featOkTst && casFeat_TokenList == null)
-      jcas.throwFeatMissing("TokenList", "edu.cmu.cs.lti.cx.Ngram");
-    return ll_cas.ll_getRefValue(addr, casFeatCode_TokenList);
+  public int getNgramLen(int addr) {
+        if (featOkTst && casFeat_NgramLen == null)
+      jcas.throwFeatMissing("NgramLen", "edu.cmu.cs.lti.cx.Ngram");
+    return ll_cas.ll_getIntValue(addr, casFeatCode_NgramLen);
   }
   /** @generated */    
-  public void setTokenList(int addr, int v) {
-        if (featOkTst && casFeat_TokenList == null)
-      jcas.throwFeatMissing("TokenList", "edu.cmu.cs.lti.cx.Ngram");
-    ll_cas.ll_setRefValue(addr, casFeatCode_TokenList, v);}
+  public void setNgramLen(int addr, int v) {
+        if (featOkTst && casFeat_NgramLen == null)
+      jcas.throwFeatMissing("NgramLen", "edu.cmu.cs.lti.cx.Ngram");
+    ll_cas.ll_setIntValue(addr, casFeatCode_NgramLen, v);}
     
-   /** @generated */
-  public int getTokenList(int addr, int i) {
-        if (featOkTst && casFeat_TokenList == null)
-      jcas.throwFeatMissing("TokenList", "edu.cmu.cs.lti.cx.Ngram");
-    if (lowLevelTypeChecks)
-      return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_TokenList), i, true);
-    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_TokenList), i);
-	return ll_cas.ll_getRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_TokenList), i);
-  }
-   
-  /** @generated */ 
-  public void setTokenList(int addr, int i, int v) {
-        if (featOkTst && casFeat_TokenList == null)
-      jcas.throwFeatMissing("TokenList", "edu.cmu.cs.lti.cx.Ngram");
-    if (lowLevelTypeChecks)
-      ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_TokenList), i, v, true);
-    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_TokenList), i);
-    ll_cas.ll_setRefArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_TokenList), i, v);
-  }
+  
  
+  /** @generated */
+  final Feature casFeat_TF;
+  /** @generated */
+  final int     casFeatCode_TF;
+  /** @generated */ 
+  public double getTF(int addr) {
+        if (featOkTst && casFeat_TF == null)
+      jcas.throwFeatMissing("TF", "edu.cmu.cs.lti.cx.Ngram");
+    return ll_cas.ll_getDoubleValue(addr, casFeatCode_TF);
+  }
+  /** @generated */    
+  public void setTF(int addr, double v) {
+        if (featOkTst && casFeat_TF == null)
+      jcas.throwFeatMissing("TF", "edu.cmu.cs.lti.cx.Ngram");
+    ll_cas.ll_setDoubleValue(addr, casFeatCode_TF, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_IDF;
+  /** @generated */
+  final int     casFeatCode_IDF;
+  /** @generated */ 
+  public double getIDF(int addr) {
+        if (featOkTst && casFeat_IDF == null)
+      jcas.throwFeatMissing("IDF", "edu.cmu.cs.lti.cx.Ngram");
+    return ll_cas.ll_getDoubleValue(addr, casFeatCode_IDF);
+  }
+  /** @generated */    
+  public void setIDF(int addr, double v) {
+        if (featOkTst && casFeat_IDF == null)
+      jcas.throwFeatMissing("IDF", "edu.cmu.cs.lti.cx.Ngram");
+    ll_cas.ll_setDoubleValue(addr, casFeatCode_IDF, v);}
+    
+  
 
 
 
@@ -90,8 +107,16 @@ public class Ngram_Type extends Annotation_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_TokenList = jcas.getRequiredFeatureDE(casType, "TokenList", "uima.cas.FSArray", featOkTst);
-    casFeatCode_TokenList  = (null == casFeat_TokenList) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_TokenList).getCode();
+    casFeat_NgramLen = jcas.getRequiredFeatureDE(casType, "NgramLen", "uima.cas.Integer", featOkTst);
+    casFeatCode_NgramLen  = (null == casFeat_NgramLen) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_NgramLen).getCode();
+
+ 
+    casFeat_TF = jcas.getRequiredFeatureDE(casType, "TF", "uima.cas.Double", featOkTst);
+    casFeatCode_TF  = (null == casFeat_TF) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_TF).getCode();
+
+ 
+    casFeat_IDF = jcas.getRequiredFeatureDE(casType, "IDF", "uima.cas.Double", featOkTst);
+    casFeatCode_IDF  = (null == casFeat_IDF) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_IDF).getCode();
 
   }
 }

@@ -13,8 +13,8 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
-/** 
- * Updated by JCasGen Mon Sep 09 17:00:33 EDT 2013
+/** type system for Token. inherited from annotation class. each token correspondes to a token in a sentence.
+ * Updated by JCasGen Mon Sep 09 23:14:55 EDT 2013
  * @generated */
 public class Token_Type extends Annotation_Type {
   /** @generated */
@@ -97,6 +97,42 @@ public class Token_Type extends Annotation_Type {
     ll_cas.ll_setIntValue(addr, casFeatCode_TermNum, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_TF;
+  /** @generated */
+  final int     casFeatCode_TF;
+  /** @generated */ 
+  public double getTF(int addr) {
+        if (featOkTst && casFeat_TF == null)
+      jcas.throwFeatMissing("TF", "edu.cmu.cs.lti.cx.Token");
+    return ll_cas.ll_getDoubleValue(addr, casFeatCode_TF);
+  }
+  /** @generated */    
+  public void setTF(int addr, double v) {
+        if (featOkTst && casFeat_TF == null)
+      jcas.throwFeatMissing("TF", "edu.cmu.cs.lti.cx.Token");
+    ll_cas.ll_setDoubleValue(addr, casFeatCode_TF, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_IDF;
+  /** @generated */
+  final int     casFeatCode_IDF;
+  /** @generated */ 
+  public double getIDF(int addr) {
+        if (featOkTst && casFeat_IDF == null)
+      jcas.throwFeatMissing("IDF", "edu.cmu.cs.lti.cx.Token");
+    return ll_cas.ll_getDoubleValue(addr, casFeatCode_IDF);
+  }
+  /** @generated */    
+  public void setIDF(int addr, double v) {
+        if (featOkTst && casFeat_IDF == null)
+      jcas.throwFeatMissing("IDF", "edu.cmu.cs.lti.cx.Token");
+    ll_cas.ll_setDoubleValue(addr, casFeatCode_IDF, v);}
+    
+  
 
 
 
@@ -117,6 +153,14 @@ public class Token_Type extends Annotation_Type {
  
     casFeat_TermNum = jcas.getRequiredFeatureDE(casType, "TermNum", "uima.cas.Integer", featOkTst);
     casFeatCode_TermNum  = (null == casFeat_TermNum) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_TermNum).getCode();
+
+ 
+    casFeat_TF = jcas.getRequiredFeatureDE(casType, "TF", "uima.cas.Double", featOkTst);
+    casFeatCode_TF  = (null == casFeat_TF) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_TF).getCode();
+
+ 
+    casFeat_IDF = jcas.getRequiredFeatureDE(casType, "IDF", "uima.cas.Double", featOkTst);
+    casFeatCode_IDF  = (null == casFeat_IDF) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_IDF).getCode();
 
   }
 }

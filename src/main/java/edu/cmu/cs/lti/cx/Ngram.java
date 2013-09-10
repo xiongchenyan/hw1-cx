@@ -11,8 +11,8 @@ import org.apache.uima.jcas.cas.FSArray;
 import org.apache.uima.jcas.tcas.Annotation;
 
 
-/** 
- * Updated by JCasGen Mon Sep 09 17:00:33 EDT 2013
+/** type system for ngram. inherited from annotation class. each token correspondes to a ngram in a sentence. the n is stored in feature NgramLen
+ * Updated by JCasGen Mon Sep 09 23:14:55 EDT 2013
  * XML source: /home/cx/workspace/11791/hw1-cx/desc/hw1-typesystem.xml
  * @generated */
 public class Ngram extends Annotation {
@@ -64,37 +64,59 @@ public class Ngram extends Annotation {
  
     
   //*--------------*
-  //* Feature: TokenList
+  //* Feature: NgramLen
 
-  /** getter for TokenList - gets tokens of this ngram
+  /** getter for NgramLen - gets the n of ngram.
    * @generated */
-  public FSArray getTokenList() {
-    if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_TokenList == null)
-      jcasType.jcas.throwFeatMissing("TokenList", "edu.cmu.cs.lti.cx.Ngram");
-    return (FSArray)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Ngram_Type)jcasType).casFeatCode_TokenList)));}
+  public int getNgramLen() {
+    if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_NgramLen == null)
+      jcasType.jcas.throwFeatMissing("NgramLen", "edu.cmu.cs.lti.cx.Ngram");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Ngram_Type)jcasType).casFeatCode_NgramLen);}
     
-  /** setter for TokenList - sets tokens of this ngram 
+  /** setter for NgramLen - sets the n of ngram. 
    * @generated */
-  public void setTokenList(FSArray v) {
-    if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_TokenList == null)
-      jcasType.jcas.throwFeatMissing("TokenList", "edu.cmu.cs.lti.cx.Ngram");
-    jcasType.ll_cas.ll_setRefValue(addr, ((Ngram_Type)jcasType).casFeatCode_TokenList, jcasType.ll_cas.ll_getFSRef(v));}    
+  public void setNgramLen(int v) {
+    if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_NgramLen == null)
+      jcasType.jcas.throwFeatMissing("NgramLen", "edu.cmu.cs.lti.cx.Ngram");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Ngram_Type)jcasType).casFeatCode_NgramLen, v);}    
+   
     
-  /** indexed getter for TokenList - gets an indexed value - tokens of this ngram
-   * @generated */
-  public Token getTokenList(int i) {
-    if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_TokenList == null)
-      jcasType.jcas.throwFeatMissing("TokenList", "edu.cmu.cs.lti.cx.Ngram");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Ngram_Type)jcasType).casFeatCode_TokenList), i);
-    return (Token)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Ngram_Type)jcasType).casFeatCode_TokenList), i)));}
+  //*--------------*
+  //* Feature: TF
 
-  /** indexed setter for TokenList - sets an indexed value - tokens of this ngram
+  /** getter for TF - gets ngram frequency in current document/sentence
    * @generated */
-  public void setTokenList(int i, Token v) { 
-    if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_TokenList == null)
-      jcasType.jcas.throwFeatMissing("TokenList", "edu.cmu.cs.lti.cx.Ngram");
-    jcasType.jcas.checkArrayBounds(jcasType.ll_cas.ll_getRefValue(addr, ((Ngram_Type)jcasType).casFeatCode_TokenList), i);
-    jcasType.ll_cas.ll_setRefArrayValue(jcasType.ll_cas.ll_getRefValue(addr, ((Ngram_Type)jcasType).casFeatCode_TokenList), i, jcasType.ll_cas.ll_getFSRef(v));}
+  public double getTF() {
+    if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_TF == null)
+      jcasType.jcas.throwFeatMissing("TF", "edu.cmu.cs.lti.cx.Ngram");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Ngram_Type)jcasType).casFeatCode_TF);}
+    
+  /** setter for TF - sets ngram frequency in current document/sentence 
+   * @generated */
+  public void setTF(double v) {
+    if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_TF == null)
+      jcasType.jcas.throwFeatMissing("TF", "edu.cmu.cs.lti.cx.Ngram");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Ngram_Type)jcasType).casFeatCode_TF, v);}    
+   
+    
+  //*--------------*
+  //* Feature: IDF
+
+  /** getter for IDF - gets invert document frequency of this ngram in copus
+
+   * @generated */
+  public double getIDF() {
+    if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_IDF == null)
+      jcasType.jcas.throwFeatMissing("IDF", "edu.cmu.cs.lti.cx.Ngram");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Ngram_Type)jcasType).casFeatCode_IDF);}
+    
+  /** setter for IDF - sets invert document frequency of this ngram in copus
+ 
+   * @generated */
+  public void setIDF(double v) {
+    if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_IDF == null)
+      jcasType.jcas.throwFeatMissing("IDF", "edu.cmu.cs.lti.cx.Ngram");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Ngram_Type)jcasType).casFeatCode_IDF, v);}    
   }
 
     

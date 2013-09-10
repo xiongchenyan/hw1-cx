@@ -12,8 +12,9 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/** 
- * Updated by JCasGen Mon Sep 09 17:00:33 EDT 2013
+/** type system for answer. inherited from sentence.
+
+ * Updated by JCasGen Mon Sep 09 23:14:55 EDT 2013
  * @generated */
 public class Answer_Type extends Sentence_Type {
   /** @generated */
@@ -44,20 +45,38 @@ public class Answer_Type extends Sentence_Type {
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.cs.lti.cx.Answer");
  
   /** @generated */
-  final Feature casFeat_Score;
+  final Feature casFeat_PredictedScore;
   /** @generated */
-  final int     casFeatCode_Score;
+  final int     casFeatCode_PredictedScore;
   /** @generated */ 
-  public double getScore(int addr) {
-        if (featOkTst && casFeat_Score == null)
-      jcas.throwFeatMissing("Score", "edu.cmu.cs.lti.cx.Answer");
-    return ll_cas.ll_getDoubleValue(addr, casFeatCode_Score);
+  public double getPredictedScore(int addr) {
+        if (featOkTst && casFeat_PredictedScore == null)
+      jcas.throwFeatMissing("PredictedScore", "edu.cmu.cs.lti.cx.Answer");
+    return ll_cas.ll_getDoubleValue(addr, casFeatCode_PredictedScore);
   }
   /** @generated */    
-  public void setScore(int addr, double v) {
-        if (featOkTst && casFeat_Score == null)
-      jcas.throwFeatMissing("Score", "edu.cmu.cs.lti.cx.Answer");
-    ll_cas.ll_setDoubleValue(addr, casFeatCode_Score, v);}
+  public void setPredictedScore(int addr, double v) {
+        if (featOkTst && casFeat_PredictedScore == null)
+      jcas.throwFeatMissing("PredictedScore", "edu.cmu.cs.lti.cx.Answer");
+    ll_cas.ll_setDoubleValue(addr, casFeatCode_PredictedScore, v);}
+    
+  
+ 
+  /** @generated */
+  final Feature casFeat_GroundTruthScore;
+  /** @generated */
+  final int     casFeatCode_GroundTruthScore;
+  /** @generated */ 
+  public double getGroundTruthScore(int addr) {
+        if (featOkTst && casFeat_GroundTruthScore == null)
+      jcas.throwFeatMissing("GroundTruthScore", "edu.cmu.cs.lti.cx.Answer");
+    return ll_cas.ll_getDoubleValue(addr, casFeatCode_GroundTruthScore);
+  }
+  /** @generated */    
+  public void setGroundTruthScore(int addr, double v) {
+        if (featOkTst && casFeat_GroundTruthScore == null)
+      jcas.throwFeatMissing("GroundTruthScore", "edu.cmu.cs.lti.cx.Answer");
+    ll_cas.ll_setDoubleValue(addr, casFeatCode_GroundTruthScore, v);}
     
   
 
@@ -70,8 +89,12 @@ public class Answer_Type extends Sentence_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_Score = jcas.getRequiredFeatureDE(casType, "Score", "uima.cas.Double", featOkTst);
-    casFeatCode_Score  = (null == casFeat_Score) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_Score).getCode();
+    casFeat_PredictedScore = jcas.getRequiredFeatureDE(casType, "PredictedScore", "uima.cas.Double", featOkTst);
+    casFeatCode_PredictedScore  = (null == casFeat_PredictedScore) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_PredictedScore).getCode();
+
+ 
+    casFeat_GroundTruthScore = jcas.getRequiredFeatureDE(casType, "GroundTruthScore", "uima.cas.Double", featOkTst);
+    casFeatCode_GroundTruthScore  = (null == casFeat_GroundTruthScore) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_GroundTruthScore).getCode();
 
   }
 }

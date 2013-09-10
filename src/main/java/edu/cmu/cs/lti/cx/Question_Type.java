@@ -12,8 +12,8 @@ import org.apache.uima.cas.Type;
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
-/** 
- * Updated by JCasGen Mon Sep 09 17:00:33 EDT 2013
+/** type system for question. inherited from sentence.
+ * Updated by JCasGen Mon Sep 09 23:14:55 EDT 2013
  * @generated */
 public class Question_Type extends Sentence_Type {
   /** @generated */
@@ -60,6 +60,24 @@ public class Question_Type extends Sentence_Type {
     ll_cas.ll_setStringValue(addr, casFeatCode_QuestionType, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_ConfidentScore;
+  /** @generated */
+  final int     casFeatCode_ConfidentScore;
+  /** @generated */ 
+  public double getConfidentScore(int addr) {
+        if (featOkTst && casFeat_ConfidentScore == null)
+      jcas.throwFeatMissing("ConfidentScore", "edu.cmu.cs.lti.cx.Question");
+    return ll_cas.ll_getDoubleValue(addr, casFeatCode_ConfidentScore);
+  }
+  /** @generated */    
+  public void setConfidentScore(int addr, double v) {
+        if (featOkTst && casFeat_ConfidentScore == null)
+      jcas.throwFeatMissing("ConfidentScore", "edu.cmu.cs.lti.cx.Question");
+    ll_cas.ll_setDoubleValue(addr, casFeatCode_ConfidentScore, v);}
+    
+  
 
 
 
@@ -72,6 +90,10 @@ public class Question_Type extends Sentence_Type {
  
     casFeat_QuestionType = jcas.getRequiredFeatureDE(casType, "QuestionType", "uima.cas.String", featOkTst);
     casFeatCode_QuestionType  = (null == casFeat_QuestionType) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_QuestionType).getCode();
+
+ 
+    casFeat_ConfidentScore = jcas.getRequiredFeatureDE(casType, "ConfidentScore", "uima.cas.Double", featOkTst);
+    casFeatCode_ConfidentScore  = (null == casFeat_ConfidentScore) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_ConfidentScore).getCode();
 
   }
 }

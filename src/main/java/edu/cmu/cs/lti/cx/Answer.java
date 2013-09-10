@@ -9,8 +9,9 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** 
- * Updated by JCasGen Mon Sep 09 17:00:33 EDT 2013
+/** type system for answer. inherited from sentence.
+
+ * Updated by JCasGen Mon Sep 09 23:14:54 EDT 2013
  * XML source: /home/cx/workspace/11791/hw1-cx/desc/hw1-typesystem.xml
  * @generated */
 public class Answer extends Sentence {
@@ -62,21 +63,39 @@ public class Answer extends Sentence {
  
     
   //*--------------*
-  //* Feature: Score
+  //* Feature: PredictedScore
 
-  /** getter for Score - gets 
+  /** getter for PredictedScore - gets predicted score of this sentence. 
    * @generated */
-  public double getScore() {
-    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_Score == null)
-      jcasType.jcas.throwFeatMissing("Score", "edu.cmu.cs.lti.cx.Answer");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Answer_Type)jcasType).casFeatCode_Score);}
+  public double getPredictedScore() {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_PredictedScore == null)
+      jcasType.jcas.throwFeatMissing("PredictedScore", "edu.cmu.cs.lti.cx.Answer");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Answer_Type)jcasType).casFeatCode_PredictedScore);}
     
-  /** setter for Score - sets  
+  /** setter for PredictedScore - sets predicted score of this sentence.  
    * @generated */
-  public void setScore(double v) {
-    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_Score == null)
-      jcasType.jcas.throwFeatMissing("Score", "edu.cmu.cs.lti.cx.Answer");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Answer_Type)jcasType).casFeatCode_Score, v);}    
+  public void setPredictedScore(double v) {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_PredictedScore == null)
+      jcasType.jcas.throwFeatMissing("PredictedScore", "edu.cmu.cs.lti.cx.Answer");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Answer_Type)jcasType).casFeatCode_PredictedScore, v);}    
+   
+    
+  //*--------------*
+  //* Feature: GroundTruthScore
+
+  /** getter for GroundTruthScore - gets ground truth score for this answer.
+   * @generated */
+  public double getGroundTruthScore() {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_GroundTruthScore == null)
+      jcasType.jcas.throwFeatMissing("GroundTruthScore", "edu.cmu.cs.lti.cx.Answer");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Answer_Type)jcasType).casFeatCode_GroundTruthScore);}
+    
+  /** setter for GroundTruthScore - sets ground truth score for this answer. 
+   * @generated */
+  public void setGroundTruthScore(double v) {
+    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_GroundTruthScore == null)
+      jcasType.jcas.throwFeatMissing("GroundTruthScore", "edu.cmu.cs.lti.cx.Answer");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Answer_Type)jcasType).casFeatCode_GroundTruthScore, v);}    
   }
 
     

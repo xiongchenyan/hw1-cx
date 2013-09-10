@@ -8,66 +8,67 @@
   <types>
     <typeDescription>
       <name>edu.cmu.cs.lti.cx.Token</name>
-      <description/>
+      <description>type system for Token. inherited from annotation class. each token correspondes to a token in a sentence.</description>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
           <name>postag</name>
-          <description/>
+          <description>the postag of this token</description>
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>StemRes</name>
-          <description>the stemming term of this token</description>
+          <description>the stemming result of this token</description>
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
         <featureDescription>
           <name>TermNum</name>
-          <description>number of terms in this token.</description>
+          <description>number of terms in this token. most time 1, based on different tokenizer, could be more than 1.</description>
           <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>TF</name>
+          <description>term frequency of this term in document/sentence</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>IDF</name>
+          <description>invert document frequency of this term in copus.</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
       <name>edu.cmu.cs.lti.cx.Ngram</name>
-      <description/>
+      <description>type system for ngram. inherited from annotation class. each token correspondes to a ngram in a sentence. the n is stored in feature NgramLen</description>
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
-          <name>TokenList</name>
-          <description>tokens of this ngram</description>
-          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-          <elementType>edu.cmu.cs.lti.cx.Token</elementType>
+          <name>NgramLen</name>
+          <description>the n of ngram.</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>TF</name>
+          <description>ngram frequency in current document/sentence</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>IDF</name>
+          <description>invert document frequency of this ngram in copus
+</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
       <name>edu.cmu.cs.lti.cx.Sentence</name>
-      <description>sentences</description>
+      <description>type system for a sentence</description>
       <supertypeName>uima.tcas.Annotation</supertypeName>
-      <features>
-        <featureDescription>
-          <name>TokenList</name>
-          <description>list of tokens</description>
-          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-          <elementType>edu.cmu.cs.lti.cx.Token</elementType>
-        </featureDescription>
-        <featureDescription>
-          <name>NgramList</name>
-          <description>list of ngrams</description>
-          <rangeTypeName>uima.cas.FSArray</rangeTypeName>
-          <elementType>edu.cmu.cs.lti.cx.Ngram</elementType>
-        </featureDescription>
-        <featureDescription>
-          <name>RawString</name>
-          <description>raw string</description>
-          <rangeTypeName>uima.cas.String</rangeTypeName>
-        </featureDescription>
-      </features>
-    </typeDescription>
+      </typeDescription>
     <typeDescription>
       <name>edu.cmu.cs.lti.cx.Question</name>
-      <description/>
+      <description>type system for question. inherited from sentence.</description>
       <supertypeName>edu.cmu.cs.lti.cx.Sentence</supertypeName>
       <features>
         <featureDescription>
@@ -75,16 +76,27 @@
           <description>question type: what?why?when? etc.</description>
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
+      <featureDescription>
+          <name>ConfidentScore</name>
+          <description>The confident score of system in answering this sentence.</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
       <name>edu.cmu.cs.lti.cx.Answer</name>
-      <description/>
+      <description>type system for answer. inherited from sentence.
+</description>
       <supertypeName>edu.cmu.cs.lti.cx.Sentence</supertypeName>
       <features>
         <featureDescription>
-          <name>Score</name>
-          <description/>
+          <name>PredictedScore</name>
+          <description>predicted score of this sentence. </description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+      <featureDescription>
+          <name>GroundTruthScore</name>
+          <description>ground truth score for this answer.</description>
           <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
       </features>
