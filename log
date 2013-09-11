@@ -1,0 +1,165 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for edu.cmu.lti.11791.f13.hw1:hw1-cx:jar:0.0.2
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 25, column 15
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building hw1-cx 0.0.2
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-release-plugin:2.2.1:prepare (default-cli) @ hw1-cx ---
+[INFO] Resuming release from phase 'run-preparation-goals'
+[INFO] Executing goals 'clean verify'...
+[WARNING] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+[INFO] [INFO] Scanning for projects...
+[INFO] [WARNING] 
+[INFO] [WARNING] Some problems were encountered while building the effective model for edu.cmu.lti.11791.f13.hw1:hw1-cx:jar:0.0.2
+[INFO] [WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 25, column 15
+[INFO] [WARNING] 
+[INFO] [WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[INFO] [WARNING] 
+[INFO] [WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[INFO] [WARNING] 
+[INFO] [INFO]                                                                         
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] Building hw1-cx 0.0.2
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] 
+[INFO] [INFO] --- maven-clean-plugin:2.3:clean (default-clean) @ hw1-cx ---
+[INFO] [INFO] Deleting file set: /home/cx/workspace/11791/hw1-cx/target (included: [**], excluded: [])
+[INFO] [INFO] 
+[INFO] [INFO] --- maven-resources-plugin:2.3:resources (default-resources) @ hw1-cx ---
+[INFO] [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] [INFO] Copying 2 resources
+[INFO] [INFO] 
+[INFO] [INFO] --- maven-compiler-plugin:2.0.2:compile (default-compile) @ hw1-cx ---
+[INFO] [INFO] Compiling 10 source files to /home/cx/workspace/11791/hw1-cx/target/classes
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] BUILD FAILURE
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [INFO] Total time: 2.181s
+[INFO] [INFO] Finished at: Tue Sep 10 20:57:30 EDT 2013
+[INFO] [INFO] Final Memory: 9M/99M
+[INFO] [INFO] ------------------------------------------------------------------------
+[INFO] [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:2.0.2:compile (default-compile) on project hw1-cx: Compilation failure: Compilation failure:
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[72,60] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeat_TokenList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[74,114] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_TokenList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[79,60] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeat_TokenList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[81,66] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_TokenList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[86,60] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeat_TokenList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[88,97] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_TokenList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[89,148] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_TokenList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[94,60] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeat_TokenList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[96,97] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_TokenList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[97,102] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_TokenList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[106,60] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeat_NgramList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[108,114] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_NgramList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[113,60] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeat_NgramList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[115,66] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_NgramList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[120,60] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeat_NgramList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[122,97] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_NgramList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[123,148] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_NgramList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[128,60] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeat_NgramList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[130,97] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_NgramList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[131,102] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_NgramList
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[140,60] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeat_RawString
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[142,76] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_RawString
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[147,60] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeat_RawString
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] 
+[INFO] [ERROR] /home/cx/workspace/11791/hw1-cx/src/main/java/edu/cmu/cs/lti/cx/Sentence.java:[149,69] cannot find symbol
+[INFO] [ERROR] symbol  : variable casFeatCode_RawString
+[INFO] [ERROR] location: class edu.cmu.cs.lti.cx.Sentence_Type
+[INFO] [ERROR] -> [Help 1]
+[INFO] [ERROR] 
+[INFO] [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[INFO] [ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[INFO] [ERROR] 
+[INFO] [ERROR] For more information about the errors and possible solutions, please read the following articles:
+[INFO] [ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.844s
+[INFO] Finished at: Tue Sep 10 20:57:30 EDT 2013
+[INFO] Final Memory: 5M/100M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.2.1:prepare (default-cli) on project hw1-cx: Maven execution failed, exit code: '1' -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
