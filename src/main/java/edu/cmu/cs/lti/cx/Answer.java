@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** type system for answer. inherited from sentence.
- * Updated by JCasGen Tue Sep 10 21:14:07 EDT 2013
+ * Updated by JCasGen Tue Sep 10 23:20:43 EDT 2013
  * XML source: /home/cx/workspace/11791/hw1-cx/desc/hw1-typesystem.xml
  * @generated */
 public class Answer extends Sentence {

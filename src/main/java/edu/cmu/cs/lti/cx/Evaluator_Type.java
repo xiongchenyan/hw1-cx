@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.cas.TOP_Type;
 
 /** Evaluation of a ranked answer list
- * Updated by JCasGen Tue Sep 10 21:14:07 EDT 2013
+ * Updated by JCasGen Tue Sep 10 23:20:43 EDT 2013
  * @generated */
 public class Evaluator_Type extends TOP_Type {
   /** @generated */
@@ -67,7 +67,7 @@ public class Evaluator_Type extends TOP_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_PredictedScoreArray), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_PredictedScoreArray), i);
-	return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_PredictedScoreArray), i);
+  return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_PredictedScoreArray), i);
   }
    
   /** @generated */ 
@@ -104,7 +104,7 @@ public class Evaluator_Type extends TOP_Type {
     if (lowLevelTypeChecks)
       return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_GroundTruthScoreArray), i, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_GroundTruthScoreArray), i);
-	return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_GroundTruthScoreArray), i);
+  return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_GroundTruthScoreArray), i);
   }
    
   /** @generated */ 
@@ -115,6 +115,117 @@ public class Evaluator_Type extends TOP_Type {
       ll_cas.ll_setDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_GroundTruthScoreArray), i, v, true);
     jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_GroundTruthScoreArray), i);
     ll_cas.ll_setDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_GroundTruthScoreArray), i, v);
+  }
+ 
+ 
+  /** @generated */
+  final Feature casFeat_NDCG;
+  /** @generated */
+  final int     casFeatCode_NDCG;
+  /** @generated */ 
+  public int getNDCG(int addr) {
+        if (featOkTst && casFeat_NDCG == null)
+      jcas.throwFeatMissing("NDCG", "edu.cmu.cs.lti.cx.Evaluator");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_NDCG);
+  }
+  /** @generated */    
+  public void setNDCG(int addr, int v) {
+        if (featOkTst && casFeat_NDCG == null)
+      jcas.throwFeatMissing("NDCG", "edu.cmu.cs.lti.cx.Evaluator");
+    ll_cas.ll_setRefValue(addr, casFeatCode_NDCG, v);}
+    
+   /** @generated */
+  public double getNDCG(int addr, int i) {
+        if (featOkTst && casFeat_NDCG == null)
+      jcas.throwFeatMissing("NDCG", "edu.cmu.cs.lti.cx.Evaluator");
+    if (lowLevelTypeChecks)
+      return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_NDCG), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_NDCG), i);
+  return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_NDCG), i);
+  }
+   
+  /** @generated */ 
+  public void setNDCG(int addr, int i, double v) {
+        if (featOkTst && casFeat_NDCG == null)
+      jcas.throwFeatMissing("NDCG", "edu.cmu.cs.lti.cx.Evaluator");
+    if (lowLevelTypeChecks)
+      ll_cas.ll_setDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_NDCG), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_NDCG), i);
+    ll_cas.ll_setDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_NDCG), i, v);
+  }
+ 
+ 
+  /** @generated */
+  final Feature casFeat_MAP;
+  /** @generated */
+  final int     casFeatCode_MAP;
+  /** @generated */ 
+  public int getMAP(int addr) {
+        if (featOkTst && casFeat_MAP == null)
+      jcas.throwFeatMissing("MAP", "edu.cmu.cs.lti.cx.Evaluator");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_MAP);
+  }
+  /** @generated */    
+  public void setMAP(int addr, int v) {
+        if (featOkTst && casFeat_MAP == null)
+      jcas.throwFeatMissing("MAP", "edu.cmu.cs.lti.cx.Evaluator");
+    ll_cas.ll_setRefValue(addr, casFeatCode_MAP, v);}
+    
+   /** @generated */
+  public double getMAP(int addr, int i) {
+        if (featOkTst && casFeat_MAP == null)
+      jcas.throwFeatMissing("MAP", "edu.cmu.cs.lti.cx.Evaluator");
+    if (lowLevelTypeChecks)
+      return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_MAP), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_MAP), i);
+  return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_MAP), i);
+  }
+   
+  /** @generated */ 
+  public void setMAP(int addr, int i, double v) {
+        if (featOkTst && casFeat_MAP == null)
+      jcas.throwFeatMissing("MAP", "edu.cmu.cs.lti.cx.Evaluator");
+    if (lowLevelTypeChecks)
+      ll_cas.ll_setDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_MAP), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_MAP), i);
+    ll_cas.ll_setDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_MAP), i, v);
+  }
+ 
+ 
+  /** @generated */
+  final Feature casFeat_Precision;
+  /** @generated */
+  final int     casFeatCode_Precision;
+  /** @generated */ 
+  public int getPrecision(int addr) {
+        if (featOkTst && casFeat_Precision == null)
+      jcas.throwFeatMissing("Precision", "edu.cmu.cs.lti.cx.Evaluator");
+    return ll_cas.ll_getRefValue(addr, casFeatCode_Precision);
+  }
+  /** @generated */    
+  public void setPrecision(int addr, int v) {
+        if (featOkTst && casFeat_Precision == null)
+      jcas.throwFeatMissing("Precision", "edu.cmu.cs.lti.cx.Evaluator");
+    ll_cas.ll_setRefValue(addr, casFeatCode_Precision, v);}
+    
+   /** @generated */
+  public double getPrecision(int addr, int i) {
+        if (featOkTst && casFeat_Precision == null)
+      jcas.throwFeatMissing("Precision", "edu.cmu.cs.lti.cx.Evaluator");
+    if (lowLevelTypeChecks)
+      return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_Precision), i, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_Precision), i);
+  return ll_cas.ll_getDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_Precision), i);
+  }
+   
+  /** @generated */ 
+  public void setPrecision(int addr, int i, double v) {
+        if (featOkTst && casFeat_Precision == null)
+      jcas.throwFeatMissing("Precision", "edu.cmu.cs.lti.cx.Evaluator");
+    if (lowLevelTypeChecks)
+      ll_cas.ll_setDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_Precision), i, v, true);
+    jcas.checkArrayBounds(ll_cas.ll_getRefValue(addr, casFeatCode_Precision), i);
+    ll_cas.ll_setDoubleArrayValue(ll_cas.ll_getRefValue(addr, casFeatCode_Precision), i, v);
   }
  
 
@@ -133,6 +244,18 @@ public class Evaluator_Type extends TOP_Type {
  
     casFeat_GroundTruthScoreArray = jcas.getRequiredFeatureDE(casType, "GroundTruthScoreArray", "uima.cas.DoubleArray", featOkTst);
     casFeatCode_GroundTruthScoreArray  = (null == casFeat_GroundTruthScoreArray) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_GroundTruthScoreArray).getCode();
+
+ 
+    casFeat_NDCG = jcas.getRequiredFeatureDE(casType, "NDCG", "uima.cas.DoubleArray", featOkTst);
+    casFeatCode_NDCG  = (null == casFeat_NDCG) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_NDCG).getCode();
+
+ 
+    casFeat_MAP = jcas.getRequiredFeatureDE(casType, "MAP", "uima.cas.DoubleArray", featOkTst);
+    casFeatCode_MAP  = (null == casFeat_MAP) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_MAP).getCode();
+
+ 
+    casFeat_Precision = jcas.getRequiredFeatureDE(casType, "Precision", "uima.cas.DoubleArray", featOkTst);
+    casFeatCode_Precision  = (null == casFeat_Precision) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_Precision).getCode();
 
   }
 }

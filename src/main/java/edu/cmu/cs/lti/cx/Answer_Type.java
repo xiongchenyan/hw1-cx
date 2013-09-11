@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** type system for answer. inherited from sentence.
- * Updated by JCasGen Tue Sep 10 21:14:07 EDT 2013
+ * Updated by JCasGen Tue Sep 10 23:20:43 EDT 2013
  * @generated */
 public class Answer_Type extends Sentence_Type {
   /** @generated */

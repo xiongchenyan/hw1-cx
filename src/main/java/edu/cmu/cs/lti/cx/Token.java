@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** type system for Token. inherited from annotation class. each token correspondes to a token in a sentence.
- * Updated by JCasGen Tue Sep 10 21:14:07 EDT 2013
+ * Updated by JCasGen Tue Sep 10 23:20:43 EDT 2013
  * XML source: /home/cx/workspace/11791/hw1-cx/desc/hw1-typesystem.xml
  * @generated */
 public class Token extends Annotation {
@@ -63,21 +63,21 @@ public class Token extends Annotation {
  
     
   //*--------------*
-  //* Feature: postag
+  //* Feature: Postag
 
-  /** getter for postag - gets the postag of this token
+  /** getter for Postag - gets the postag of this token
    * @generated */
   public String getPostag() {
-    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_postag == null)
-      jcasType.jcas.throwFeatMissing("postag", "edu.cmu.cs.lti.cx.Token");
-    return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_postag);}
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_Postag == null)
+      jcasType.jcas.throwFeatMissing("Postag", "edu.cmu.cs.lti.cx.Token");
+    return jcasType.ll_cas.ll_getStringValue(addr, ((Token_Type)jcasType).casFeatCode_Postag);}
     
-  /** setter for postag - sets the postag of this token 
+  /** setter for Postag - sets the postag of this token 
    * @generated */
   public void setPostag(String v) {
-    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_postag == null)
-      jcasType.jcas.throwFeatMissing("postag", "edu.cmu.cs.lti.cx.Token");
-    jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_postag, v);}    
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_Postag == null)
+      jcasType.jcas.throwFeatMissing("Postag", "edu.cmu.cs.lti.cx.Token");
+    jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_Postag, v);}    
    
     
   //*--------------*

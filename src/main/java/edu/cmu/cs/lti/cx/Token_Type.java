@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** type system for Token. inherited from annotation class. each token correspondes to a token in a sentence.
- * Updated by JCasGen Tue Sep 10 21:14:07 EDT 2013
+ * Updated by JCasGen Tue Sep 10 23:20:43 EDT 2013
  * @generated */
 public class Token_Type extends Annotation_Type {
   /** @generated */
@@ -45,20 +45,20 @@ public class Token_Type extends Annotation_Type {
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.cs.lti.cx.Token");
  
   /** @generated */
-  final Feature casFeat_postag;
+  final Feature casFeat_Postag;
   /** @generated */
-  final int     casFeatCode_postag;
+  final int     casFeatCode_Postag;
   /** @generated */ 
   public String getPostag(int addr) {
-        if (featOkTst && casFeat_postag == null)
-      jcas.throwFeatMissing("postag", "edu.cmu.cs.lti.cx.Token");
-    return ll_cas.ll_getStringValue(addr, casFeatCode_postag);
+        if (featOkTst && casFeat_Postag == null)
+      jcas.throwFeatMissing("Postag", "edu.cmu.cs.lti.cx.Token");
+    return ll_cas.ll_getStringValue(addr, casFeatCode_Postag);
   }
   /** @generated */    
   public void setPostag(int addr, String v) {
-        if (featOkTst && casFeat_postag == null)
-      jcas.throwFeatMissing("postag", "edu.cmu.cs.lti.cx.Token");
-    ll_cas.ll_setStringValue(addr, casFeatCode_postag, v);}
+        if (featOkTst && casFeat_Postag == null)
+      jcas.throwFeatMissing("Postag", "edu.cmu.cs.lti.cx.Token");
+    ll_cas.ll_setStringValue(addr, casFeatCode_Postag, v);}
     
   
  
@@ -143,8 +143,8 @@ public class Token_Type extends Annotation_Type {
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
 
  
-    casFeat_postag = jcas.getRequiredFeatureDE(casType, "postag", "uima.cas.String", featOkTst);
-    casFeatCode_postag  = (null == casFeat_postag) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_postag).getCode();
+    casFeat_Postag = jcas.getRequiredFeatureDE(casType, "Postag", "uima.cas.String", featOkTst);
+    casFeatCode_Postag  = (null == casFeat_Postag) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_Postag).getCode();
 
  
     casFeat_StemRes = jcas.getRequiredFeatureDE(casType, "StemRes", "uima.cas.String", featOkTst);

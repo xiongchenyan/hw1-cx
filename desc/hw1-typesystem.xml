@@ -12,7 +12,7 @@
       <supertypeName>uima.tcas.Annotation</supertypeName>
       <features>
         <featureDescription>
-          <name>postag</name>
+          <name>Postag</name>
           <description>the postag of this token</description>
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
@@ -112,6 +112,21 @@
         <featureDescription>
           <name>GroundTruthScoreArray</name>
           <description>corresponding ground truth score, one to one correspondence with PredictedScoreArray</description>
+          <rangeTypeName>uima.cas.DoubleArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>NDCG</name>
+          <description>NDCG score at corresponding positions.</description>
+          <rangeTypeName>uima.cas.DoubleArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>MAP</name>
+          <description>MAP score at different ranking positions.</description>
+          <rangeTypeName>uima.cas.DoubleArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>Precision</name>
+          <description>precision at different positions.</description>
           <rangeTypeName>uima.cas.DoubleArray</rangeTypeName>
         </featureDescription>
       </features>
