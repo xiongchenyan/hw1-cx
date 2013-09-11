@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** type system for Token. inherited from annotation class. each token correspondes to a token in a sentence.
- * Updated by JCasGen Mon Sep 09 23:14:55 EDT 2013
+ * Updated by JCasGen Tue Sep 10 21:11:55 EDT 2013
  * XML source: /home/cx/workspace/11791/hw1-cx/desc/hw1-typesystem.xml
  * @generated */
 public class Token extends Annotation {

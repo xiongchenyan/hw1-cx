@@ -12,7 +12,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** type system for ngram. inherited from annotation class. each token correspondes to a ngram in a sentence. the n is stored in feature NgramLen
- * Updated by JCasGen Mon Sep 09 23:14:55 EDT 2013
+ * Updated by JCasGen Tue Sep 10 21:11:55 EDT 2013
  * XML source: /home/cx/workspace/11791/hw1-cx/desc/hw1-typesystem.xml
  * @generated */
 public class Ngram extends Annotation {
@@ -103,15 +103,13 @@ public class Ngram extends Annotation {
   //* Feature: IDF
 
   /** getter for IDF - gets invert document frequency of this ngram in copus
-
    * @generated */
   public double getIDF() {
     if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_IDF == null)
       jcasType.jcas.throwFeatMissing("IDF", "edu.cmu.cs.lti.cx.Ngram");
     return jcasType.ll_cas.ll_getDoubleValue(addr, ((Ngram_Type)jcasType).casFeatCode_IDF);}
     
-  /** setter for IDF - sets invert document frequency of this ngram in copus
- 
+  /** setter for IDF - sets invert document frequency of this ngram in copus 
    * @generated */
   public void setIDF(double v) {
     if (Ngram_Type.featOkTst && ((Ngram_Type)jcasType).casFeat_IDF == null)

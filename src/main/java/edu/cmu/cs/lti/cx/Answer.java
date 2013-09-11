@@ -10,8 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** type system for answer. inherited from sentence.
-
- * Updated by JCasGen Mon Sep 09 23:14:54 EDT 2013
+ * Updated by JCasGen Tue Sep 10 21:11:55 EDT 2013
  * XML source: /home/cx/workspace/11791/hw1-cx/desc/hw1-typesystem.xml
  * @generated */
 public class Answer extends Sentence {
@@ -65,14 +64,14 @@ public class Answer extends Sentence {
   //*--------------*
   //* Feature: PredictedScore
 
-  /** getter for PredictedScore - gets predicted score of this sentence. 
+  /** getter for PredictedScore - gets predicted score of this sentence.
    * @generated */
   public double getPredictedScore() {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_PredictedScore == null)
       jcasType.jcas.throwFeatMissing("PredictedScore", "edu.cmu.cs.lti.cx.Answer");
     return jcasType.ll_cas.ll_getDoubleValue(addr, ((Answer_Type)jcasType).casFeatCode_PredictedScore);}
     
-  /** setter for PredictedScore - sets predicted score of this sentence.  
+  /** setter for PredictedScore - sets predicted score of this sentence. 
    * @generated */
   public void setPredictedScore(double v) {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_PredictedScore == null)

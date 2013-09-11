@@ -55,8 +55,7 @@
         </featureDescription>
         <featureDescription>
           <name>IDF</name>
-          <description>invert document frequency of this ngram in copus
-</description>
+          <description>invert document frequency of this ngram in copus</description>
           <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
       </features>
@@ -85,19 +84,35 @@
     </typeDescription>
     <typeDescription>
       <name>edu.cmu.cs.lti.cx.Answer</name>
-      <description>type system for answer. inherited from sentence.
-</description>
+      <description>type system for answer. inherited from sentence.</description>
       <supertypeName>edu.cmu.cs.lti.cx.Sentence</supertypeName>
       <features>
         <featureDescription>
           <name>PredictedScore</name>
-          <description>predicted score of this sentence. </description>
+          <description>predicted score of this sentence.</description>
           <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
       <featureDescription>
           <name>GroundTruthScore</name>
           <description>ground truth score for this answer.</description>
           <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  <typeDescription>
+      <name>edu.cmu.cs.lti.cs.Evaluator</name>
+      <description>Evaluation of a ranked answer list</description>
+      <supertypeName>uima.cas.TOP</supertypeName>
+      <features>
+        <featureDescription>
+          <name>PredictedScoreArray</name>
+          <description>Ranked list of predicted scores</description>
+          <rangeTypeName>uima.cas.DoubleArray</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>GroundTruthScoreArray</name>
+          <description>corresponding ground truth score, one to one correspondence with PredictedScoreArray</description>
+          <rangeTypeName>uima.cas.DoubleArray</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
