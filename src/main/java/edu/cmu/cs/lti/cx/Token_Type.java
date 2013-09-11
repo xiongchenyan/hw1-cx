@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** type system for Token. inherited from annotation class. each token correspondes to a token in a sentence.
- * Updated by JCasGen Tue Sep 10 21:11:55 EDT 2013
+ * Updated by JCasGen Tue Sep 10 21:14:07 EDT 2013
  * @generated */
 public class Token_Type extends Annotation_Type {
   /** @generated */

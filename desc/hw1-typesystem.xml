@@ -100,7 +100,7 @@
       </features>
     </typeDescription>
   <typeDescription>
-      <name>edu.cmu.cs.lti.cs.Evaluator</name>
+      <name>edu.cmu.cs.lti.cx.Evaluator</name>
       <description>Evaluation of a ranked answer list</description>
       <supertypeName>uima.cas.TOP</supertypeName>
       <features>

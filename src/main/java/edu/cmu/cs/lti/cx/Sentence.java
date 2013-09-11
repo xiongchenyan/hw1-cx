@@ -12,7 +12,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** type system for a sentence
- * Updated by JCasGen Tue Sep 10 21:11:55 EDT 2013
+ * Updated by JCasGen Tue Sep 10 21:14:07 EDT 2013
  * XML source: /home/cx/workspace/11791/hw1-cx/desc/hw1-typesystem.xml
  * @generated */
 public class Sentence extends Annotation {

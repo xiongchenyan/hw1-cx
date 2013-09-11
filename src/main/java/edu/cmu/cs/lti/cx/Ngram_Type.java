@@ -14,7 +14,7 @@ import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** type system for ngram. inherited from annotation class. each token correspondes to a ngram in a sentence. the n is stored in feature NgramLen
- * Updated by JCasGen Tue Sep 10 21:11:55 EDT 2013
+ * Updated by JCasGen Tue Sep 10 21:14:07 EDT 2013
  * @generated */
 public class Ngram_Type extends Annotation_Type {
   /** @generated */
